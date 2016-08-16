@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7190A36F1D618AE700B0119C /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */; };
+		7190A3711D618AF600B0119C /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3701D618AF600B0119C /* Alarm.swift */; };
+		7190A3731D61C14400B0119C /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3721D61C14400B0119C /* AddAlarmViewController.swift */; };
+		7190A3751D61D32B00B0119C /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3741D61D32B00B0119C /* RealmHelper.swift */; };
+		7190A3771D62D8B000B0119C /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3761D62D8B000B0119C /* AlarmScheduler.swift */; };
 		71A2F7C91D1E34D300CDF125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2F7C81D1E34D300CDF125 /* AppDelegate.swift */; };
 		71A2F7CB1D1E34D300CDF125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2F7CA1D1E34D300CDF125 /* ViewController.swift */; };
 		71A2F7CE1D1E34D300CDF125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7CC1D1E34D300CDF125 /* Main.storyboard */; };
 		71A2F7D01D1E34D300CDF125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */; };
 		71A2F7D31D1E34D300CDF125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7D11D1E34D300CDF125 /* LaunchScreen.storyboard */; };
+		BA707ACE2D91C367579B7EDC /* Pods_Alarm_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530BC55C8F7D57142C260862 /* Pods_Alarm_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530BC55C8F7D57142C260862 /* Pods_Alarm_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarm_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		7190A3701D618AF600B0119C /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		7190A3721D61C14400B0119C /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		7190A3741D61D32B00B0119C /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		7190A3761D62D8B000B0119C /* AlarmScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
 		71A2F7C51D1E34D300CDF125 /* Alarm App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A2F7C81D1E34D300CDF125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A2F7CA1D1E34D300CDF125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,8 @@
 		71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A2F7D21D1E34D300CDF125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A2F7D41D1E34D300CDF125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7264AC5406D6A963C84C6A34 /* Pods-Alarm App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App.release.xcconfig"; sourceTree = "<group>"; };
+		A7437DF66F581ED759CE1084 /* Pods-Alarm App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA707ACE2D91C367579B7EDC /* Pods_Alarm_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				71A2F7C71D1E34D300CDF125 /* Alarm App */,
 				71A2F7C61D1E34D300CDF125 /* Products */,
+				B2C8DE5C559469D2FF513718 /* Pods */,
+				A171D502C4DE494A1B705CD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,34 @@
 			children = (
 				71A2F7C81D1E34D300CDF125 /* AppDelegate.swift */,
 				71A2F7CA1D1E34D300CDF125 /* ViewController.swift */,
+				7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */,
 				71A2F7CC1D1E34D300CDF125 /* Main.storyboard */,
 				71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */,
 				71A2F7D11D1E34D300CDF125 /* LaunchScreen.storyboard */,
 				71A2F7D41D1E34D300CDF125 /* Info.plist */,
+				7190A3701D618AF600B0119C /* Alarm.swift */,
+				7190A3721D61C14400B0119C /* AddAlarmViewController.swift */,
+				7190A3741D61D32B00B0119C /* RealmHelper.swift */,
+				7190A3761D62D8B000B0119C /* AlarmScheduler.swift */,
 			);
 			path = "Alarm App";
+			sourceTree = "<group>";
+		};
+		A171D502C4DE494A1B705CD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				530BC55C8F7D57142C260862 /* Pods_Alarm_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2C8DE5C559469D2FF513718 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7437DF66F581ED759CE1084 /* Pods-Alarm App.debug.xcconfig */,
+				7264AC5406D6A963C84C6A34 /* Pods-Alarm App.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71A2F7D71D1E34D300CDF125 /* Build configuration list for PBXNativeTarget "Alarm App" */;
 			buildPhases = (
+				0767E3A340CBBFE519EAEA91 /* [CP] Check Pods Manifest.lock */,
 				71A2F7C11D1E34D300CDF125 /* Sources */,
 				71A2F7C21D1E34D300CDF125 /* Frameworks */,
 				71A2F7C31D1E34D300CDF125 /* Resources */,
+				09376D1D46EA357E93908633 /* [CP] Embed Pods Frameworks */,
+				465C04E3DB4EDE2AF5A882CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +172,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0767E3A340CBBFE519EAEA91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		09376D1D46EA357E93908633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		465C04E3DB4EDE2AF5A882CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71A2F7C11D1E34D300CDF125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71A2F7CB1D1E34D300CDF125 /* ViewController.swift in Sources */,
+				7190A3751D61D32B00B0119C /* RealmHelper.swift in Sources */,
+				7190A3771D62D8B000B0119C /* AlarmScheduler.swift in Sources */,
 				71A2F7C91D1E34D300CDF125 /* AppDelegate.swift in Sources */,
+				7190A3731D61C14400B0119C /* AddAlarmViewController.swift in Sources */,
+				7190A36F1D618AE700B0119C /* AlarmTableViewCell.swift in Sources */,
+				7190A3711D618AF600B0119C /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +344,7 @@
 		};
 		71A2F7D81D1E34D300CDF125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7437DF66F581ED759CE1084 /* Pods-Alarm App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Alarm App/Info.plist";
@@ -260,6 +356,7 @@
 		};
 		71A2F7D91D1E34D300CDF125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7264AC5406D6A963C84C6A34 /* Pods-Alarm App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Alarm App/Info.plist";
@@ -288,6 +385,7 @@
 				71A2F7D91D1E34D300CDF125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
