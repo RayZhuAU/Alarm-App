@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718DBDB11D65349C00F887B1 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DBDB01D65349C00F887B1 /* FolderViewController.swift */; };
+		718DBDB61D6596BD00F887B1 /* FolderAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DBDB51D6596BD00F887B1 /* FolderAlarmTableViewCell.swift */; };
 		7190A36F1D618AE700B0119C /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */; };
 		7190A3711D618AF600B0119C /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3701D618AF600B0119C /* Alarm.swift */; };
 		7190A3731D61C14400B0119C /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190A3721D61C14400B0119C /* AddAlarmViewController.swift */; };
@@ -17,11 +19,15 @@
 		71A2F7CE1D1E34D300CDF125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7CC1D1E34D300CDF125 /* Main.storyboard */; };
 		71A2F7D01D1E34D300CDF125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */; };
 		71A2F7D31D1E34D300CDF125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A2F7D11D1E34D300CDF125 /* LaunchScreen.storyboard */; };
+		71E480401D63E88F0097926C /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E4803F1D63E88F0097926C /* Folder.swift */; };
+		71E480421D640DEA0097926C /* AddFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E480411D640DEA0097926C /* AddFolderViewController.swift */; };
 		BA707ACE2D91C367579B7EDC /* Pods_Alarm_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530BC55C8F7D57142C260862 /* Pods_Alarm_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		530BC55C8F7D57142C260862 /* Pods_Alarm_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarm_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718DBDB01D65349C00F887B1 /* FolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
+		718DBDB51D6596BD00F887B1 /* FolderAlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderAlarmTableViewCell.swift; sourceTree = "<group>"; };
 		7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		7190A3701D618AF600B0119C /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		7190A3721D61C14400B0119C /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A2F7D21D1E34D300CDF125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A2F7D41D1E34D300CDF125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E4803F1D63E88F0097926C /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		71E480411D640DEA0097926C /* AddFolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFolderViewController.swift; sourceTree = "<group>"; };
 		7264AC5406D6A963C84C6A34 /* Pods-Alarm App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App.release.xcconfig"; sourceTree = "<group>"; };
 		A7437DF66F581ED759CE1084 /* Pods-Alarm App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm App/Pods-Alarm App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +58,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		718DBDB21D6583E900F887B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71A2F7CA1D1E34D300CDF125 /* ViewController.swift */,
+				718DBDB01D65349C00F887B1 /* FolderViewController.swift */,
+				7190A3721D61C14400B0119C /* AddAlarmViewController.swift */,
+				71E480411D640DEA0097926C /* AddFolderViewController.swift */,
+				7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */,
+				718DBDB51D6596BD00F887B1 /* FolderAlarmTableViewCell.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		718DBDB31D65841300F887B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7190A3761D62D8B000B0119C /* AlarmScheduler.swift */,
+				7190A3741D61D32B00B0119C /* RealmHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		718DBDB41D65842D00F887B1 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7190A3701D618AF600B0119C /* Alarm.swift */,
+				71E4803F1D63E88F0097926C /* Folder.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		71A2F7BC1D1E34D300CDF125 = {
 			isa = PBXGroup;
 			children = (
@@ -72,16 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				71A2F7C81D1E34D300CDF125 /* AppDelegate.swift */,
-				71A2F7CA1D1E34D300CDF125 /* ViewController.swift */,
-				7190A36E1D618AE700B0119C /* AlarmTableViewCell.swift */,
+				718DBDB41D65842D00F887B1 /* Objects */,
+				718DBDB31D65841300F887B1 /* Helpers */,
+				718DBDB21D6583E900F887B1 /* View Controllers */,
 				71A2F7CC1D1E34D300CDF125 /* Main.storyboard */,
 				71A2F7CF1D1E34D300CDF125 /* Assets.xcassets */,
 				71A2F7D11D1E34D300CDF125 /* LaunchScreen.storyboard */,
 				71A2F7D41D1E34D300CDF125 /* Info.plist */,
-				7190A3701D618AF600B0119C /* Alarm.swift */,
-				7190A3721D61C14400B0119C /* AddAlarmViewController.swift */,
-				7190A3741D61D32B00B0119C /* RealmHelper.swift */,
-				7190A3761D62D8B000B0119C /* AlarmScheduler.swift */,
 			);
 			path = "Alarm App";
 			sourceTree = "<group>";
@@ -228,8 +264,12 @@
 				71A2F7CB1D1E34D300CDF125 /* ViewController.swift in Sources */,
 				7190A3751D61D32B00B0119C /* RealmHelper.swift in Sources */,
 				7190A3771D62D8B000B0119C /* AlarmScheduler.swift in Sources */,
+				71E480401D63E88F0097926C /* Folder.swift in Sources */,
 				71A2F7C91D1E34D300CDF125 /* AppDelegate.swift in Sources */,
 				7190A3731D61C14400B0119C /* AddAlarmViewController.swift in Sources */,
+				718DBDB11D65349C00F887B1 /* FolderViewController.swift in Sources */,
+				71E480421D640DEA0097926C /* AddFolderViewController.swift in Sources */,
+				718DBDB61D6596BD00F887B1 /* FolderAlarmTableViewCell.swift in Sources */,
 				7190A36F1D618AE700B0119C /* AlarmTableViewCell.swift in Sources */,
 				7190A3711D618AF600B0119C /* Alarm.swift in Sources */,
 			);

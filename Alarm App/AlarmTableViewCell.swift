@@ -10,6 +10,9 @@ import UIKit
 
 class AlarmTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var folderSwitch: UISwitch!
+    @IBOutlet weak var colonLabel: UILabel!
+    @IBOutlet weak var alarmImageView: UIImageView!
     @IBOutlet weak var activatedSwitch: UISwitch!
     @IBOutlet weak var minutesLabel: UILabel!
     @IBOutlet weak var hoursLabel: UILabel!

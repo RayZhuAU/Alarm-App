@@ -25,7 +25,36 @@ class RealmHelper {
     }
     static func retrieveAlarms() -> Results<Alarm>{
         let realm = try! Realm()
-        let note = realm.objects(Alarm)
-        return note.sorted("time", ascending: true)
+        let alarm = realm.objects(Alarm).filter("inFolder == false")
+        return alarm.sorted("time", ascending: true)
+    }
+    static func addFolder(folder: Folder) {
+        let realm = try! Realm()
+        try! realm.write(){
+            realm.add(folder)
+        }
+    }
+    static func deleteFolder(folder: Folder){
+        let realm = try! Realm()
+        try! realm.write(){
+            realm.delete(folder)
+        }
+    }
+    static func retrieveFolders() -> Results<Folder>{
+        let realm = try! Realm()
+        let folder = realm.objects(Folder)
+        return folder.sorted("title", ascending: true)
+    }
+    static func addAlarmToFolder(folder: Folder, alarm: Alarm) {
+        let realm = try! Realm()
+        try! realm.write() {
+            folder.alarms.append(alarm)
+        }
+    }
+    static func removeAlarmFromFolder(folder: Folder, alarm: Alarm) {
+        let realm = try! Realm()
+        try! realm.write() {
+            folder.alarms.delete(alarm)
+        }
     }
 }

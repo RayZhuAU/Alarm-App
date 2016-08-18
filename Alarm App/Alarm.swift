@@ -17,5 +17,7 @@ class Alarm: Object {
     dynamic var time = ""
     dynamic var activated = false
     dynamic var fullTime = NSTimeInterval()
-
+    dynamic var image = ""
+    dynamic var inFolder = false
+    
 }

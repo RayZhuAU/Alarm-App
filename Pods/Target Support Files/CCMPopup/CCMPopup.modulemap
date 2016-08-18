@@ -1,0 +1,6 @@
+framework module CCMPopup {
+  umbrella header "CCMPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}

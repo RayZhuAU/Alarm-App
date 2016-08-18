@@ -1,0 +1,6 @@
+framework module ESTimePicker {
+  umbrella header "ESTimePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
