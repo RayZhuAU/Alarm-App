@@ -62,12 +62,13 @@ extension FolderViewController: UITableViewDataSource, UITableViewDelegate {
         cell.alarmImageView.image = UIImage(named: alarm.image)
         cell.activatedSwitch.tag = indexPath.row
         cell.activatedSwitch.addTarget(self, action: #selector(self.switchChanged(_:)), forControlEvents: .ValueChanged)
+        AlarmScheduler.scheduleNotification(alarm)
         return cell
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            RealmHelper.deleteAlarm(folder.alarms[indexPath.row])
             AlarmScheduler.cancelNotification(folder.alarms[indexPath.row])
+            RealmHelper.deleteAlarm(folder.alarms[indexPath.row])
             self.alarmTableView.reloadData()
         }
     }
